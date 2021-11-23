@@ -19,7 +19,7 @@ using System;
             Console.WriteLine("3. Faktorial") ;
             Console.WriteLine("4. Reversed Number") ;
             Console.WriteLine("5. Convert Number to String") ;
-
+            Console.WriteLine("6. Palindrome") ;
             
             string ulang = "N";
 
@@ -33,11 +33,14 @@ using System;
                         Console.WriteLine() ;
                         Console.WriteLine("Anda memilih : 1. Segitiga Alfabet") ;
 
+                        int range;
                         int alphabet = 64;
                         int i, j;
+                        Console.Write("Enter the range: ");
+                        range = int.Parse(Console.ReadLine());
 
-                        for (i = 1; i <= 5; i++) {
-                            for (j = 1; j <= 5 - i; j++) {
+                        for (i = 1; i <= range; i++) {
+                            for (j = 1; j <= range - i; j++) {
                                 Console.Write(" ");
                             }
                             for (j = 1; j <= i; j++) {
@@ -96,16 +99,14 @@ using System;
                         Console.WriteLine("Anda memilih : 4. Reversed Number") ;
 
                         Console.Write("Enter any number: ");
-                        int angka = int.Parse(Console.ReadLine());
+                        string angka = Console.ReadLine();
                         
-                        int reverse = 0;  
-                        while(angka>0)  
-                        {  
-                            int temp = angka % 10;  
-                            reverse = (reverse * 10) + temp;  
-                            angka = angka / 10;  
+                        string reverse = "";  
+
+                        for(int i = angka.Length-1 ; i >= 0 ; i--) {
+                            reverse = reverse + angka[i];  
                         }  
-                        Console.WriteLine("Reverse Number: {0}",reverse);
+                        Console.WriteLine("Reverse Number: " + reverse);  
                         break ;
                     }
                     case 5 : {
@@ -127,6 +128,27 @@ using System;
 
                         Console.WriteLine(result);
                         break ;
+                    }
+                    case 6 : {
+                        Console.WriteLine() ;
+                        Console.WriteLine("Anda memilih : 6. Palindrome") ;
+
+                        Console.Write("Enter words: ");
+                        string input_word = Console.ReadLine();
+
+                        string reverse = "";  
+
+                        for(int i = input_word.Length-1 ; i >= 0 ; i--) {
+                            reverse = reverse + input_word[i];  
+                        }  
+
+                        if(input_word.Equals(reverse)) {
+                            Console.WriteLine("THIS IS PALINDROME");
+                        } else {
+                            Console.WriteLine("THIS IS NOT PALINDROME");
+                        }
+                        
+                        break;
                     }
                     default : {
                         Console.WriteLine("Invalid Number");

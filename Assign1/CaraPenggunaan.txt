@@ -1,0 +1,25 @@
+link github : https://github.com/clinophile/OCBC-Batch-2-CSharp/tree/main/Assign1
+
+1.  Terdapat 6 Tipe Soal, Pengguna memasukkan angka antara 1-6 untuk memilih soal yang akan dikerjakan.
+2.  Setelah memilih Tipe Soal, berikut Penggunaan untuk setiap soalnya.
+    a. Tipe 1 (Segitiga Alfabet) :
+        - User memasukan jumlah baris (range)
+        - Program akan menampilkan segitiga Alfabet dengan jumlah baris sesuai dengan input user
+    b.  Tipe 2 (Segitiga Angka) :
+        - User memasukan jumlah baris (range)
+        - Program akan menampilkan segitiga Angka dengan jumlah baris sesuai dengan input user
+    c.  Tipe 3 (Faktorial) :
+        - User memasukan sebuah angka
+        - Program akan menampilkan hasil faktorial dari angka yang diinput user
+    d.  Tipe 4 (Reversed Number) :
+        - User memasukan kumpulan angka
+        - Program akan menampilkan angka yang urutannya dimulai dari angka paling akhir ke angka paling awal
+    e.  Tipe 5 (Convert Number to String) :
+        - User memasukan kumpulan angka
+        - Program akan menampilkan String yang berisi penyebutan setiap angka dalam bahasa inggris
+    f.  Tipe 6 (Palindrome) :
+        - User memasukan sebuah kata
+        - Program akan menampilkan apakan kata tersebut Palindrome / Not Palindrome
+3.  Setelah menjalankan 1 Tipe Soal, User akan diberi pilihan (Y/N) untuk mencoba Tipe Soal lain.
+    Jika User memasukan Y, maka akan kembali ke step 2 (memilih tipe soal).
+    Jika User memasukan N, maka program akan berhenti.

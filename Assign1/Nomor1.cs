@@ -3,12 +3,15 @@ using System;
 public class Nomor1 {
   public static void Main(string[] args) {
 
+    int range;
     int alphabet = 64;
     int i, j;
+    Console.Write("Enter the range: ");
+    range = int.Parse(Console.ReadLine());
 
 
-    for (i = 1; i <= 5; i++) {
-        for (j = 1; j <= 5 - i; j++) {
+    for (i = 1; i <= range; i++) {
+        for (j = 1; j <= range - i; j++) {
             Console.Write(" ");
         }
         for (j = 1; j <= i; j++) {
