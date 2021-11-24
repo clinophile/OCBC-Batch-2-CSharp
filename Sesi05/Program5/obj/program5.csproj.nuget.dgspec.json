@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\H8\\sesi05\\program5\\program5.csproj": {}
+    "D:\\Data\\H8\\Sesi05\\Program5\\program5.csproj": {}
   },
   "projects": {
-    "D:\\Data\\H8\\sesi05\\program5\\program5.csproj": {
+    "D:\\Data\\H8\\Sesi05\\Program5\\program5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\H8\\sesi05\\program5\\program5.csproj",
+        "projectUniqueName": "D:\\Data\\H8\\Sesi05\\Program5\\program5.csproj",
         "projectName": "program5",
-        "projectPath": "D:\\Data\\H8\\sesi05\\program5\\program5.csproj",
+        "projectPath": "D:\\Data\\H8\\Sesi05\\Program5\\program5.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\H8\\sesi05\\program5\\obj\\",
+        "outputPath": "D:\\Data\\H8\\Sesi05\\Program5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
