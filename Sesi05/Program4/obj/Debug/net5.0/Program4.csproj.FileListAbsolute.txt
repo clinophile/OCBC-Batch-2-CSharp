@@ -1,0 +1,16 @@
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.csproj.AssemblyReference.cache
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.AssemblyInfoInputs.cache
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.AssemblyInfo.cs
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.csproj.CoreCompileInputs.cache
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.exe
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.deps.json
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.runtimeconfig.json
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.runtimeconfig.dev.json
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.dll
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\ref\Program4.dll
+D:\Data\H8\sesi05\Program4\bin\Debug\net5.0\Program4.pdb
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.dll
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\ref\Program4.dll
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.pdb
+D:\Data\H8\sesi05\Program4\obj\Debug\net5.0\Program4.genruntimeconfig.cache

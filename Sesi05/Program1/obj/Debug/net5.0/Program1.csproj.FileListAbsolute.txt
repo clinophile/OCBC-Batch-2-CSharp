@@ -1,0 +1,16 @@
+D:\Data\H8\Sesi05\Program1\obj\Debug\net5.0\Program1.csproj.AssemblyReference.cache
+D:\Data\H8\Sesi05\Program1\obj\Debug\net5.0\Program1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\H8\Sesi05\Program1\obj\Debug\net5.0\Program1.AssemblyInfoInputs.cache
+D:\Data\H8\Sesi05\Program1\obj\Debug\net5.0\Program1.AssemblyInfo.cs
+D:\Data\H8\Sesi05\Program1\obj\Debug\net5.0\Program1.csproj.CoreCompileInputs.cache
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.exe
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.deps.json
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.runtimeconfig.json
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.runtimeconfig.dev.json
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.dll
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\ref\Program1.dll
+D:\Data\H8\sesi05\program1\bin\Debug\net5.0\Program1.pdb
+D:\Data\H8\sesi05\program1\obj\Debug\net5.0\Program1.dll
+D:\Data\H8\sesi05\program1\obj\Debug\net5.0\ref\Program1.dll
+D:\Data\H8\sesi05\program1\obj\Debug\net5.0\Program1.pdb
+D:\Data\H8\sesi05\program1\obj\Debug\net5.0\Program1.genruntimeconfig.cache
