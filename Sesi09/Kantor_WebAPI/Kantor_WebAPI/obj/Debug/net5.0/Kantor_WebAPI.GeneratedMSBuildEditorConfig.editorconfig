@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Kantor_WebAPI
-build_property.ProjectDir = D:\Data\H8\Sesi09\Kantor_WebAPI\Kantor_WebAPI\
+build_property.ProjectDir = D:\Data\H8\sesi09\Kantor_WebAPI\Kantor_WebAPI\

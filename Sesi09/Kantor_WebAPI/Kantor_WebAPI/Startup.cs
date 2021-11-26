@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
 
 namespace Kantor_WebAPI
 {
@@ -26,6 +27,11 @@ namespace Kantor_WebAPI
             services.AddControllersWithViews();
             services.AddControllers();
             services.Add(new ServiceDescriptor(typeof(Models.EmployeeContext), new Models.EmployeeContext(Configuration.GetConnectionString("DefaultConnection"))));
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication1", Version = "v1" });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +40,9 @@ namespace Kantor_WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApp v1"));
+
             }
             else
             {
