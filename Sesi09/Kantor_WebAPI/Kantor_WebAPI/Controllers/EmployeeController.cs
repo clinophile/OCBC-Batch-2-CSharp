@@ -34,18 +34,42 @@ namespace Kantor_WebAPI.Controllers
         }
 
 
-        // [HttpPost]
-        // public ActionResult<IEnumerable<EmployeeItem>> SetEmployeeItem(string id, string nama, string jenisKelamin, string alamat)
-        // {
-        //     _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
-        //     if (ModelState.IsValid)
-        //     {
-        //         _context.SetEmployee(id, nama, jenisKelamin, alamat);
+         [HttpPost]
+         public ActionResult<IEnumerable<EmployeeItem>> SetEmployeeItem(EmployeeItem newEmployee)
+         {
+            _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
+            return _context.SetEmployee(newEmployee);
+         }
 
-        //         return new JsonResult("BERHASIL");
+        [HttpPut("id", Name = "Update")]
+        public ActionResult<IEnumerable<EmployeeItem>> UpdateEmployeeItem(string id, EmployeeItem employee)
+        {
+            _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
+            if(_context.GetEmployee(id).Count == 0)
+            {
+                return NotFound("Id Not Found"); 
+            } else
+            {
+                return _context.UpdateEmployee(id, employee);
+            }
 
-        //     }
-        //     return new JsonResult("something went wrong") { StatusCode = 500 };
-        // }
+            
+        }
+
+        [HttpDelete("id", Name = "Delete")]
+        public ActionResult<IEnumerable<EmployeeItem>> DeleteEmployeeItem(string id)
+        {
+            _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
+            if (_context.DeleteEmployee(id))
+            {
+
+                return Ok("Employee Deleted");
+            }
+            
+                return NotFound("Employee with id = " + id + " Not Found");
+         
+        }
+
+
     }
 }

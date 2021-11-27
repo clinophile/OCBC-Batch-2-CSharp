@@ -69,29 +69,84 @@ namespace Kantor_WebAPI.Models
                         });
                     }
                 }
+                conn.Close();
             }
+
 
             return list;
         }
 
-        // public void SetEmployee(String id, string nama, string jenisKelamin, string alamat)
-        // {
+         public List<EmployeeItem> SetEmployee(EmployeeItem newEmployee)
+         {
 
-        //     using (MySqlConnection conn = GetConnection())
-        //     {
-        //         conn.Open();
-        //         MySqlCommand cmd = new MySqlCommand("INSERT INTO EMPLOYEE(id, nama, jenis_kelamin, alamat) " +
-        //             "VALUES(@id, @nama, @jenisKelamin, @alamat)", conn);
-        //         cmd.Parameters.AddWithValue("@id", id);
-        //         cmd.Parameters.AddWithValue("@nama", nama);
-        //         cmd.Parameters.AddWithValue("@jenisKelamin", jenisKelamin);
-        //         cmd.Parameters.AddWithValue("@alamat", alamat);
-
+             using (MySqlConnection conn = GetConnection())
+             {
+                conn.Open();
                 
-        //     }
-        // }
-              
-                        
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO EMPLOYEE(nama, jenis_kelamin, alamat) " +
+                     "VALUES(@nama, @jenisKelamin, @alamat)", conn);
+                cmd.Parameters.AddWithValue("@nama", newEmployee.nama);
+                cmd.Parameters.AddWithValue("@jenisKelamin", newEmployee.jenisKelamin);
+                cmd.Parameters.AddWithValue("@alamat", newEmployee.alamat);
+
+                cmd.ExecuteNonQuery();
+                var id = cmd.LastInsertedId;
+
+                conn.Close();
+                
+                return GetEmployee(id.ToString());
+
+            }
+         }
+
+        public List<EmployeeItem> UpdateEmployee(string id, EmployeeItem newEmployee)
+        {
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("UPDATE EMPLOYEE " +
+                     "SET nama = @nama, jenis_kelamin = @jenisKelamin, alamat = @alamat " +
+                     "WHERE id = @id", conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@nama", newEmployee.nama);
+                cmd.Parameters.AddWithValue("@jenisKelamin", newEmployee.jenisKelamin);
+                cmd.Parameters.AddWithValue("@alamat", newEmployee.alamat);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                return GetEmployee(id.ToString());
+
+            }
+        }
+
+        public bool DeleteEmployee(string id)
+        {
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                var listEmployee = GetEmployee(id);
+                if (listEmployee.Count != 0)
+                {
+                    MySqlCommand cmd = new MySqlCommand("DELETE FROM EMPLOYEE " +
+                         "WHERE id = @id", conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    cmd.ExecuteNonQuery();
+                    
+                    conn.Close();
+                    return true;
+                }
+
+                conn.Close();
+                return false;
+
+            }
+        }
+
+
 
     }
 }
