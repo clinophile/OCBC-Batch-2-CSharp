@@ -26,7 +26,7 @@ namespace Kantor_WebAPI.Controllers
             return _context.GetAllEmployee();
         }
 
-        [HttpGet("id", Name ="Get One")]
+        [HttpGet("{id}", Name ="Get One")]
         public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem(string id)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
@@ -34,14 +34,14 @@ namespace Kantor_WebAPI.Controllers
         }
 
 
-         [HttpPost]
+         [HttpPost()]
          public ActionResult<IEnumerable<EmployeeItem>> SetEmployeeItem(EmployeeItem newEmployee)
          {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
             return _context.SetEmployee(newEmployee);
          }
 
-        [HttpPut("id", Name = "Update")]
+        [HttpPut("{id}", Name = "Update")]
         public ActionResult<IEnumerable<EmployeeItem>> UpdateEmployeeItem(string id, EmployeeItem employee)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
@@ -56,7 +56,7 @@ namespace Kantor_WebAPI.Controllers
             
         }
 
-        [HttpDelete("id", Name = "Delete")]
+        [HttpDelete("{id}", Name = "Delete")]
         public ActionResult<IEnumerable<EmployeeItem>> DeleteEmployeeItem(string id)
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;

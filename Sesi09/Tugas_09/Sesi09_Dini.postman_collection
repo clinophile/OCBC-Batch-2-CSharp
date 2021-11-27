@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "5e6e76d4-65fa-43c9-ab38-d6b81db87870",
+		"name": "Sesi09",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44319/api/employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44319",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44319/api/employee/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44319",
+					"path": [
+						"api",
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertNewEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"nama\": \"Dodo\",\r\n    \"jenisKelamin\": \"Laki-laki\",\r\n    \"alamat\": \"Batam\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44319/api/employee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44319",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"nama\": \"Lala\",\r\n    \"jenisKelamin\": \"Laki-laki\",\r\n    \"alamat\": \"Samarinda\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44319/api/employee/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44319",
+					"path": [
+						"api",
+						"employee",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44319/api/employee/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44319",
+					"path": [
+						"api",
+						"employee",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
