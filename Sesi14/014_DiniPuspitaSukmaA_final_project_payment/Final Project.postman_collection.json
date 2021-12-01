@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "24acf968-26f5-4838-8fa1-df7e9ed60354",
+		"name": "Final Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"mama\",\r\n  \"email\": \"mama@gmail.com\",\r\n  \"password\": \"Mama_1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mama@gmail.com\",\r\n    \"password\": \"Mama_1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/AuthManagement/Login",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8\",\r\n    \"refreshToken\": \"H2SBWO6NK5UUBXODUD7KDTDCCMQKZ2QRZ35322cf673-4cc8-408b-9ff7-1f6b391de525\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/AuthManagement/RefreshToken",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"RefreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/Payment",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/Payment/1",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/Payment/3",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"cardOwnerName\": \"Lulu\",\r\n        \"cardNumber\": \"11111111\",\r\n        \"expirationDate\": \"2022-10-31\",\r\n        \"securityCode\": \"zzzzxxxx\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/Payment",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Payment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjA0ZTBhZDEwLTVjOGItNDhiOS04ZTk5LTI0NDU5NzVmZWQzYiIsImVtYWlsIjoibWFtYUBnbWFpbC5jb20iLCJzdWIiOiJtYW1hQGdtYWlsLmNvbSIsImp0aSI6IjU2YjdkMGFlLTdmZjUtNGIwMS1hYzA5LTJlMWI5MDNlZTY5ZiIsIm5iZiI6MTYzODM0MDgyMiwiZXhwIjoxNjM4MzQ0NDIyLCJpYXQiOjE2MzgzNDA4MjJ9.SI7UwQ7yr1r4PQ7A-BnlgvDsyPFPq_1sxncnQYx8nY8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"paymentDetailId\": 3,\r\n        \"cardOwnerName\": \"Lulu\",\r\n        \"cardNumber\": \"1098234\",\r\n        \"expirationDate\": \"2022-10-31\",\r\n        \"securityCode\": \"lalalala\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://paymentapi-dini.herokuapp.com/api/Payment/3",
+					"protocol": "https",
+					"host": [
+						"paymentapi-dini",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Payment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
