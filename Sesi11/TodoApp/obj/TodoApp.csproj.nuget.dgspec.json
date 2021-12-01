@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\H8\\sesi11\\TodoApp\\TodoApp.csproj": {}
+    "D:\\Data\\H8\\Sesi11\\TodoApp\\TodoApp.csproj": {}
   },
   "projects": {
-    "D:\\Data\\H8\\sesi11\\TodoApp\\TodoApp.csproj": {
+    "D:\\Data\\H8\\Sesi11\\TodoApp\\TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\H8\\sesi11\\TodoApp\\TodoApp.csproj",
+        "projectUniqueName": "D:\\Data\\H8\\Sesi11\\TodoApp\\TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "D:\\Data\\H8\\sesi11\\TodoApp\\TodoApp.csproj",
+        "projectPath": "D:\\Data\\H8\\Sesi11\\TodoApp\\TodoApp.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\H8\\sesi11\\TodoApp\\obj\\",
+        "outputPath": "D:\\Data\\H8\\Sesi11\\TodoApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

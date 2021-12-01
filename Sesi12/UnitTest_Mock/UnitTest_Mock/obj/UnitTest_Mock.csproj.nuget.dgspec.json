@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Data\\H8\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
+    "D:\\Data\\H8\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
   },
   "projects": {
-    "D:\\Data\\H8\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
+    "D:\\Data\\H8\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Data\\H8\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectUniqueName": "D:\\Data\\H8\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "projectName": "UnitTest_Mock",
-        "projectPath": "D:\\Data\\H8\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectPath": "D:\\Data\\H8\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Data\\H8\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
+        "outputPath": "D:\\Data\\H8\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
