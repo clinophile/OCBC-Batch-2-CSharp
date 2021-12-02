@@ -1,0 +1,93 @@
+{
+"RefreshToken": [
+	{
+		"Id" : 1,
+		"UserId" : "0eff0fea-5106-4ceb-b44f-6990529ad3c7",
+		"Token" : "0A26VZPGEG0G6R9X5Y40NQLSN7WO5WMEAOA27f695fe-30a7-408c-b3a2-d215ec046a30",
+		"JwtId" : "c0b88951-2a50-49e2-9940-2e583d64bfeb",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-11-30 17:54:36",
+		"ExpireDate" : "2022-05-30 17:54:36"
+	},
+	{
+		"Id" : 2,
+		"UserId" : "0eff0fea-5106-4ceb-b44f-6990529ad3c7",
+		"Token" : "V3C5DE45FJXXD072JLLPTM758NUSGKOCIEK20a983de-ba1f-4db2-b75d-fbf8c6e6e15c",
+		"JwtId" : "abe38ce0-fae6-4dac-a6ff-72248563ae12",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-11-30 17:55:09",
+		"ExpireDate" : "2022-05-30 17:55:09"
+	},
+	{
+		"Id" : 3,
+		"UserId" : "03db2826-0afa-4c76-a6f7-72bcf161be23",
+		"Token" : "W38COKVE4LCGFPLVACBS0AJ708BPHRS4RDVd347a1cb-e2eb-4ea9-9948-c6852217c6e6",
+		"JwtId" : "64931897-9c95-4df0-a6c9-15716ca2aa1e",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-01 02:54:20",
+		"ExpireDate" : "2022-06-01 02:54:20"
+	},
+	{
+		"Id" : 4,
+		"UserId" : "03db2826-0afa-4c76-a6f7-72bcf161be23",
+		"Token" : "LAIGE5HW9Y3054L07TQFYA4X72Y1YWR9F631657584b-06ba-4121-84c6-6169a35a2a90",
+		"JwtId" : "fdd2b5db-22c8-4ba9-a254-5452210f8a3d",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-01 02:54:54",
+		"ExpireDate" : "2022-06-01 02:54:54"
+	},
+	{
+		"Id" : 5,
+		"UserId" : "117b06f6-a83a-41a5-b5dc-c01aa90ee058",
+		"Token" : "BMUPMI03DWD9XX4H7VXOU06OVXZYSJGAJXRb35332ff-079b-452b-aab8-e0b5f691842e",
+		"JwtId" : "7fde972d-78d7-47be-9b3a-908f548d85bf",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-01 06:38:06",
+		"ExpireDate" : "2022-06-01 06:38:06"
+	},
+	{
+		"Id" : 6,
+		"UserId" : "04e0ad10-5c8b-48b9-8e99-2445975fed3b",
+		"Token" : "2Q1L7WEGKCYIOKOYRKRCQ5E2W7BSVXW6DZO2532c97e-6c50-4556-99ed-fc674fd68766",
+		"JwtId" : "15552a59-b7ed-4f1d-943c-c8895bea7fdf",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-01 06:39:06",
+		"ExpireDate" : "2022-06-01 06:39:06"
+	},
+	{
+		"Id" : 7,
+		"UserId" : "04e0ad10-5c8b-48b9-8e99-2445975fed3b",
+		"Token" : "H2SBWO6NK5UUBXODUD7KDTDCCMQKZ2QRZ35322cf673-4cc8-408b-9ff7-1f6b391de525",
+		"JwtId" : "56b7d0ae-7ff5-4b01-ac09-2e1b903ee69f",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-01 06:40:22",
+		"ExpireDate" : "2022-06-01 06:40:22"
+	},
+	{
+		"Id" : 8,
+		"UserId" : "8aa8792e-0f67-4d9b-aa5e-a94f154c4529",
+		"Token" : "63U3Y9EMXOO986AVMHQAFGDLO5CYME8IV2Ca972d2f3-6631-47bd-91e8-dd546aab8fac",
+		"JwtId" : "2bd5a04c-86a3-47c7-9646-4a2b54a357e9",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-02 00:33:54",
+		"ExpireDate" : "2022-06-02 00:33:54"
+	},
+	{
+		"Id" : 9,
+		"UserId" : "8aa8792e-0f67-4d9b-aa5e-a94f154c4529",
+		"Token" : "0UNGURJU4QYOKGH1UR7O4HLHV5MVIVPNHVHb87b451b-0cfe-462a-8feb-8fed4f86190f",
+		"JwtId" : "fc77b756-9ea7-4af7-a096-dbb4ba664158",
+		"IsUsed" : 0,
+		"IsRevorked" : 0,
+		"AddedDate" : "2021-12-02 00:34:31",
+		"ExpireDate" : "2022-06-02 00:34:31"
+	}
+]}
